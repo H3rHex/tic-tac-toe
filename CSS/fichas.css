@@ -12,11 +12,11 @@
 }
 
 .jugadorX {
-    background-image: url(Images/Fichas/X.svg);
+    background-image: url(/Images/X.svg);
 }
 
 .jugadorO {
-    background-image: url(Images/Fichas/0.svg);
+    background-image: url(/Images/0.svg);
 }
 
 @keyframes AparecerFicha {
