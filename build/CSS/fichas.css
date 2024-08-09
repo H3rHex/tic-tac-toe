@@ -1,0 +1,45 @@
+.Ficha {
+    width: 64px; /* Ajusta el tamaño según tus necesidades */
+    height: 64px; /* Ajusta el tamaño según tus necesidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain; /* Ajusta la imagen para que se ajuste dentro del área */
+    background-repeat: no-repeat;
+    background-position: center;
+
+    animation: AparecerFicha 0.2s ease-out;
+}
+
+.jugadorX {
+    background-image: url(/Assets/Fichas/X.svg);
+}
+
+.jugadorO {
+    background-image: url(/Assets/Fichas/0.svg);
+}
+
+@keyframes AparecerFicha {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .Ficha{
+        width: 48px;
+        height: 48px;
+    }
+}

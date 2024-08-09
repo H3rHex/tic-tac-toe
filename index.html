@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Assets/icon.png">
+    <link rel="stylesheet" href="build/CSS/fichas.css">
+    <link rel="stylesheet" href="build/CSS/index.css">
+    <title>Tres En Raya</title>
+</head>
+<body style="background-color: #FFEFEF;">
+
+    <header class="HeaderContainer">
+        <h1 id="WebTitle">Tres en raya</h1>
+    </header>
+
+    <main class="MainContainer">
+
+        <div class="PlayerPoints">
+            <h1 id="PlayerPoints01">Jugador X: <span id="PointsPlayerX">0</span></h1>
+            <h1 id="PlayerPoints02">Jugador 0: <span id="PointsPlayerO">0</span></h1>
+        </div>
+
+        <div class="CanvasContainer">
+            <div id="Canvas">
+                <table class="Tablero">
+                    <tbody>
+                        <tr>
+                            <td class="cell" data-cell-index="0"></td>
+                            <td class="cell" data-cell-index="1"></td>
+                            <td class="cell" data-cell-index="2"></td>
+                        </tr>
+                        <tr>
+                            <td class="cell" data-cell-index="3"></td>
+                            <td class="cell" data-cell-index="4"></td>
+                            <td class="cell" data-cell-index="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="cell" data-cell-index="6"></td>
+                            <td class="cell" data-cell-index="7"></td>
+                            <td class="cell" data-cell-index="8"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="gameStateContainer">
+            <h1 id="gamestate">Es el turno de X</h1>
+        </div>
+
+        <div class="buttonContainer">
+            <button id="RestartPuntos" data-button-id="ClickEfect-Y">Reiniciar todo</button>
+            <button id="RestartGame" data-button-id="ClickEfect-Y">Reiniciar Juego</button>
+        
+        </div>
+
+    </main>
+
+    <script src="build/JS/efects.js" aria-label="efects script connection"></script>
+    <script src="build/JS/game.js" aria-label="game script connection"></script>
+</body>
+</html>

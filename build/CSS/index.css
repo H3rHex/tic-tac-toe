@@ -1,0 +1,198 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Slab:wght@100..900&display=swap');
+/*Roboto Slab For UI*/  /*Karla For Text*/
+
+/*Animaciones*/
+
+@keyframes ClickEfect {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+button.clickEfect{
+    animation: ClickEfect 0.1s linear;
+}
+
+
+*{
+    margin: 0;
+}
+
+h1{
+
+    font-family: 'Karla', serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.HeaderContainer{
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameStateContainer{
+    margin-bottom: 20px;
+}
+
+.PlayerPoints {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    width: 100%;
+    margin-top: 30px;
+}
+.PlayerPoints h1{
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.CanvasContainer{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+
+/*Buttons*/
+.buttonContainer {
+    display: flex; /* Usa Flexbox */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en múltiples filas */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente (opcional) */
+    gap: 50px; /* Elimina el espacio entre los botones */
+    margin: 0; /* Elimina márgenes en el contenedor */
+}
+
+.buttonContainer button {
+    width: 300px; /* Ancho fijo para los botones */
+    height: 100px; /* Altura fija para los botones */
+    margin: 0; /* Elimina márgenes en los botones */
+    
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+
+    border: 3px solid #917959;
+    background-color: #d3b790;
+
+    cursor: pointer;
+
+}
+
+.buttonContainer button:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-out;
+}
+
+/*Player Points indicator*/
+.PlayerPointsIndicator{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/*CANVAS CSS*/
+#Canvas{
+
+    height: 550px;
+    width: 550px;
+
+    background-color: #ddba8a;
+    border: 5px, solid #000000;
+
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Opcional: centra verticalmente el contenido */
+}
+
+.Tablero tbody{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define tres columnas de igual tamaño */
+    grid-template-rows: repeat(3, 1fr);    /* Define tres filas de igual tamaño */
+    gap: 1px; /* Espacio entre celdas */
+    width: 500px; /* Ajusta el tamaño total del tablero */
+    height: 500px; /* Ajusta el tamaño total del tablero */
+}
+
+
+/* Estilo para las celdas del tablero */
+.Tablero td {
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    border: 1px solid #887152; /* Color y estilo del borde */
+    background-color: #c2a887; /* Color de fondo de las celdas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las celdas */
+    transition: background-color 0.3s ease; /* Suaviza la transición de color de fondo */
+    width: 160px;
+    height: 160px;
+}
+
+/* Efecto hover para las celdas */
+.Tablero td:hover {
+    background-color: #b89a6e; /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+
+/*Moviles S*/
+@media only screen and (max-width: 728px) {
+
+    .PlayerPointsIndicator{
+        gap: 1px;
+    }
+
+    .PlayerPoints {
+        gap: 50px;
+       
+    }
+    .PlayerPoints h1{
+        font-size: 20px;
+    }
+    
+    .CanvasContainer{
+        height: 400px;
+    }
+
+    #Canvas{
+        height: 300px;
+        width: 300px;
+        
+    }
+
+
+    .Tablero tbody{
+        width: 250px;
+        height: 250px;
+    }
+
+    .Tablero td{
+        width: 80px;
+        height: 80px;
+    }
+
+    #gamestate{
+        font-size: large;
+    }
+
+}
+
