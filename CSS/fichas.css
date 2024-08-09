@@ -7,16 +7,15 @@
     background-size: contain; /* Ajusta la imagen para que se ajuste dentro del área */
     background-repeat: no-repeat;
     background-position: center;
-
     animation: AparecerFicha 0.2s ease-out;
 }
 
 .jugadorX {
-    background-image: url(/Images/X.webp);
+    background-image: url("../Images/X.webp");
 }
 
 .jugadorO {
-    background-image: url(/Images/0.webp);
+    background-image: url("../Images/0.webp");
 }
 
 @keyframes AparecerFicha {
@@ -38,7 +37,7 @@
 }
 
 @media only screen and (max-width: 728px) {
-    .Ficha{
+    .Ficha {
         width: 48px;
         height: 48px;
     }
