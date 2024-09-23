@@ -59,3 +59,4 @@ Puedes jugar el juego [aquí](https://h3rhex.github.io/tic-tac-toe/).
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
 ## Autor
+H3rHex
